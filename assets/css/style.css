@@ -28,6 +28,10 @@ h2 {
   margin-top: 16px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 /* ------------------------------------------------------  Flex Classes -------------------------------------------------------- */
 
 .gap-6 {
@@ -115,18 +119,66 @@ h2 {
   box-shadow: 0px 0px 110px 0px var(--img-shadow);
 }
 
+/* ------------------------------------------------------  Partners slider -------------------------------------------------------- */
+
+.slider {
+  position: relative;
+  padding-top: 37px;
+  padding-bottom: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(151, 71, 255, 0.1) 51.41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 51.41%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
+    linear-gradient(var(--white-color) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.slick-slide {
+  margin: 0 35px;
+}
+
+.slick-list {
+  margin: 0 -35px;
+}
+
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
 
 /* ------------------------------------------------------  Min-width: 1400 ------------------------------------------------------- */
 
 @media (min-width: 1400px) {
   .section1 {
-    bottom: 200px;
-    background-size: 100% 65%;
+    bottom: 155px;
+    background-size: 100% 77%;
   }
 
-  .mt-xxl-90 {
-    margin-top: 90px;
+  .mt-xxl-100 {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mb-lg-140 {
+    margin-bottom: 140px;
   }
 }
 
@@ -136,5 +188,9 @@ h2 {
   .max-xxl-grow {
     flex-grow: 1;
     align-items: center;
+  }
+
+  .max-xxl-mb-140 {
+    margin-top: 140px;
   }
 }
