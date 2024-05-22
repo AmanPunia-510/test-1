@@ -403,13 +403,11 @@ h2 {
   padding: 30px;
 }
 
+/* ------------------------------------------------------  Accordian -------------------------------------------------------------- */
+
 .accrodian {
   max-width: 927px;
 }
-
-/* .accordian-p {
-  max-width: 750px;
-} */
 
 .accordian-box {
   background: linear-gradient(
@@ -423,6 +421,20 @@ h2 {
 .accordian-p {
   border-bottom: 3px solid #a020f0;
   border-radius: 10px;
+}
+
+/* ------------------------------------------------------  Ready section --------------------------------------------------------- */
+
+.ready-section {
+  background-image: url(../images/png/ready-section.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 388px;
+  background-size: 100%;
+}
+
+.ready-h{
+  max-width: 719px;
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
