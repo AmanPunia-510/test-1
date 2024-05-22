@@ -27,6 +27,10 @@ h2 {
 
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
 
+.pb-27 {
+  padding-bottom: 27px;
+}
+
 .pt-73 {
   padding-top: 73px;
 }
@@ -58,6 +62,10 @@ h2 {
   margin-top: 16px;
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
@@ -66,8 +74,16 @@ h2 {
   margin-bottom: 40px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 .mt-70 {
   margin-top: 70px;
+}
+
+.mb-160 {
+  margin-bottom: 160px;
 }
 
 /* ------------------------------------------------------  Flex Classes -------------------------------------------------------- */
@@ -80,8 +96,20 @@ h2 {
   gap: 10px;
 }
 
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-18 {
+  gap: 18px;
+}
+
 .gap-40 {
   gap: 40px;
+}
+
+.left-10 {
+  left: 10px;
 }
 /* ------------------------------------------------------  Header -------------------------------------------------------------- */
 
@@ -258,6 +286,78 @@ h2 {
 
 .mirror-img {
   max-width: 507px;
+}
+
+/* ------------------------------------------------------  Leverage -------------------------------------------------------------- */
+
+.levrage {
+  background-image: url("../images/png/leverage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leverage-card {
+  padding: 20px;
+  background: #ffffff0a;
+  border: 1px solid #ffffff1f;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+}
+
+.common-leverage-svg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.btc-svg {
+  background-color: #fdc604;
+}
+
+/* ------------------------------------------------------  Timeline -------------------------------------------------------------- */
+
+.timeline-box {
+  background: linear-gradient(
+    153.79deg,
+    rgba(255, 255, 255, 0.1) -31.17%,
+    rgba(153, 153, 153, 0) 112.78%
+  );
+  border-top: 3px solid #a020f0;
+  padding: 20px;
+}
+
+.disc {
+  border: 2px solid white;
+  bottom: 14px;
+}
+
+.common-rotate {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #a020f0;
+  box-shadow: 0px 0px 10px 0px #a020f0b2;
+  border-radius: 3.54px;
+  background-color: var(--body-bg);
+  transform: rotate(45deg);
+}
+
+.common-rotate span {
+  transform: rotate(-45deg);
+}
+
+.rotate-box1 {
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 2;
+}
+
+.timeline-img {
+  max-width: 813px;
+  top: -86px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */

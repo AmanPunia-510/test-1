@@ -70,6 +70,8 @@
   --color-e6: #e6e6e6;
   --arrow-bg: #ffffff33;
   --color-e5: #e5e5e5;
+  --color-87: #868787;
+  --text-red: #ff0000;
   --started-btn: #d0215d66;
   --img-shadow: #ffc0cb26;
   --btn-gradient: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
@@ -225,6 +227,14 @@
 
 .color-e5 {
   color: var(--color-e5);
+}
+
+.color-86 {
+  color: var(--color-87);
+}
+
+.text-red {
+  color: var(--text-red);
 }
 
 .btn-gradient {
