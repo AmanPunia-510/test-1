@@ -23,6 +23,10 @@ h2 {
 
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
 
+.pt-73 {
+  padding-top: 73px;
+}
+
 .py-140 {
   padding-top: 140px;
   padding-bottom: 140px;
@@ -52,6 +56,10 @@ h2 {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mt-70 {
+  margin-top: 70px;
 }
 
 /* ------------------------------------------------------  Flex Classes -------------------------------------------------------- */
@@ -206,6 +214,36 @@ h2 {
 
 .trading-box2-p {
   max-width: 495px;
+}
+
+/* ------------------------------------------------------  Discover -------------------------------------------------------------- */
+
+.discover-p1 {
+  max-width: 535px;
+}
+
+.discover-card {
+  background: linear-gradient(
+    135.66deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(153, 153, 153, 0) 112.35%
+  );
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.discover-svg-common {
+  height: 80px;
+  width: 80px;
+  border-radius: 7px;
+  background-color: #d0215d;
+}
+
+.discover-png {
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
