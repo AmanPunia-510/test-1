@@ -63,11 +63,13 @@
   --white-color: #ffffff;
   --black-color: #000000;
   --body-bg: #040404;
-  --color-d0: #D0215D;
-  --color-e9: #E9E7EA;
+  --color-d0: #d0215d;
+  --color-e9: #e9e7ea;
   --nav-brdr: #ffffff1a;
   --red-brdr: #1d0915;
+  --color-e6: #e6e6e6;
   --arrow-bg: #ffffff33;
+  --color-e5: #e5e5e5;
   --started-btn: #d0215d66;
   --img-shadow: #ffc0cb26;
   --btn-gradient: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
@@ -209,15 +211,23 @@
   color: var(--black-color);
 }
 
-.color-d0{
+.color-d0 {
   color: var(--color-d0);
 }
 
-.color-e9{
+.color-e9 {
   color: var(--color-e9);
 }
 
-.btn-gradient{
+.color-e6 {
+  color: var(--color-e6);
+}
+
+.color-e5 {
+  color: var(--color-e5);
+}
+
+.btn-gradient {
   background: var(--btn-gradient);
 }
 /* ------------------------------------------------------  Define All Background colors -------------------------------------------- */

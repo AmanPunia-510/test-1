@@ -17,15 +17,37 @@ h2 {
   padding: 0;
 }
 
+.max-w-521 {
+  max-width: 521px;
+}
+
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
+
+.py-140 {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
 /* ------------------------------------------------------  Margin Classes ------------------------------------------------------ */
 
 .mb-10 {
   margin-bottom: 10px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mb-40 {
@@ -159,6 +181,31 @@ h2 {
 
 .slick-list {
   margin: 0 -35px;
+}
+
+/* ------------------------------------------------------  Trading -------------------------------------------------------------- */
+
+.trading-p1 {
+  max-width: 500px;
+}
+
+.trading-p2 {
+  max-width: 478px;
+}
+
+.trading-box2 {
+  background: linear-gradient(
+    98.22deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(204, 204, 204, 0) 12.83%
+  );
+  border: 1px solid #ffffff1a;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.trading-box2-p {
+  max-width: 495px;
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
