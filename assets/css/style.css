@@ -70,6 +70,10 @@ h2 {
   margin-top: 30px;
 }
 
+.mt-34{
+  margin-top: 34px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -102,6 +106,10 @@ h2 {
 
 .gap-18 {
   gap: 18px;
+}
+
+.gap-34{
+  gap: 34px;
 }
 
 .gap-40 {
@@ -358,6 +366,20 @@ h2 {
   top: -86px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* ------------------------------------------------------  Overview -------------------------------------------------------------- */
+
+.overview-common-card {
+  background: #ffffff0f;
+  border-left: 2px solid #a020f0;
+  border-radius: 10px;
+  width: 198px;
+  padding: 10px 20px;
+}
+
+.overview-card{
+  max-width: 425px;
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
