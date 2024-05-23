@@ -68,10 +68,12 @@
   --nav-brdr: #ffffff1a;
   --red-brdr: #1d0915;
   --color-e6: #e6e6e6;
+  --color-cf: #cfcfcf;
   --arrow-bg: #ffffff33;
   --color-e5: #e5e5e5;
   --color-87: #868787;
   --text-red: #ff0000;
+  --footer-bg: #111111;
   --started-btn: #d0215d66;
   --img-shadow: #ffc0cb26;
   --btn-gradient: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
@@ -240,8 +242,16 @@
 .btn-gradient {
   background: var(--btn-gradient);
 }
+
+.color-cf {
+  color: var(--color-cf);
+}
 /* ------------------------------------------------------  Define All Background colors -------------------------------------------- */
 
 .body-bg {
   background-color: var(--body-bg);
+}
+
+.footer-bg {
+  background-color: var(--footer-bg);
 }

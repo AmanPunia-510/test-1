@@ -31,12 +31,21 @@ h2 {
   padding-bottom: 27px;
 }
 
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .pt-73 {
   padding-top: 73px;
 }
 
 .pt-140 {
   padding-top: 140px;
+}
+
+.pb-140 {
+  padding-bottom: 140px;
 }
 
 .py-140 {
@@ -60,6 +69,10 @@ h2 {
 
 .mt-12 {
   margin-top: 12px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
 }
 
 .mt-16 {
@@ -202,7 +215,7 @@ h2 {
 .slider {
   position: relative;
   padding-top: 37px;
-  padding-bottom: 30px;
+  padding-bottom: 37px;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -433,8 +446,19 @@ h2 {
   background-size: 100%;
 }
 
-.ready-h{
+.ready-h {
   max-width: 719px;
+}
+
+.footer-p {
+  max-width: 374px;
+}
+
+.common-footer-icon {
+  border: 1px solid #ffffff33;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
