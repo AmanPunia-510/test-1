@@ -366,6 +366,26 @@ h2 {
   background-color: #fdc604;
 }
 
+.eth-svg {
+  background-color: #ffffff;
+}
+
+.Dog-svg {
+  background-color: #c3a634;
+}
+
+.awax-svg {
+  background-color: #e84142;
+}
+
+.link-svg {
+  background-color: #2a5ada;
+}
+
+.bnb-svg {
+  background-color: #f3ba2f;
+}
+
 /* ------------------------------------------------------  Timeline -------------------------------------------------------------- */
 
 .timeline-box {
@@ -581,6 +601,10 @@ h2 {
 
   .pt-md-73 {
     padding-top: 73px;
+  }
+
+  .mt-md-60 {
+    margin-top: 60px;
   }
 }
 
