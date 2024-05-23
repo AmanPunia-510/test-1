@@ -33,6 +33,10 @@ h2 {
   width: 83%;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
 
 .pb-27 {
@@ -177,6 +181,7 @@ h2 {
   height: 48px;
   outline: none;
   border-radius: 130px;
+  transition: all 200ms linear;
 }
 
 .nav {
@@ -249,12 +254,7 @@ h2 {
   position: relative;
   padding-top: 57px;
   padding-bottom: 50px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(151, 71, 255, 0.1) 51.41%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: var(--slider-gr);
 }
 
 .slider::after {
@@ -264,12 +264,7 @@ h2 {
   border-radius: 16px;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 51.41%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: var(--slider-after);
   -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
     linear-gradient(var(--white-color) 0 0);
   -webkit-mask-composite: xor;
@@ -296,12 +291,8 @@ h2 {
 }
 
 .trading-box2 {
-  background: linear-gradient(
-    98.22deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(204, 204, 204, 0) 12.83%
-  );
-  border: 1px solid #ffffff1a;
+  background: var(--trading-gr);
+  border: 1px solid var(--trading-br);
   padding: 18px;
   border-radius: 10px;
 }
@@ -317,12 +308,8 @@ h2 {
 }
 
 .discover-card {
-  background: linear-gradient(
-    135.66deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(153, 153, 153, 0) 112.35%
-  );
-  border: 1px solid #ffffff1a;
+  background: var(--discover-gr);
+  border: 1px solid var(--trading-br);
   border-radius: 10px;
   padding: 24px;
 }
@@ -331,7 +318,7 @@ h2 {
   height: 80px;
   width: 80px;
   border-radius: 7px;
-  background-color: #d0215d;
+  background-color: var(--color-d0);
 }
 
 .discover-png {
@@ -359,8 +346,8 @@ h2 {
 
 .leverage-card {
   padding: 20px;
-  background: #ffffff0a;
-  border: 1px solid #ffffff1f;
+  background: var(--leverage-card);
+  border: 1px solid var(--leverage-card1);
   backdrop-filter: blur(6px);
   border-radius: 10px;
 }
@@ -372,51 +359,47 @@ h2 {
 }
 
 .btc-svg {
-  background-color: #fdc604;
+  background-color: var(--btc-svg);
 }
 
 .eth-svg {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .Dog-svg {
-  background-color: #c3a634;
+  background-color: var(--dog-svg);
 }
 
 .awax-svg {
-  background-color: #e84142;
+  background-color: var(--awax-svg);
 }
 
 .link-svg {
-  background-color: #2a5ada;
+  background-color: var(--link-svg);
 }
 
 .bnb-svg {
-  background-color: #f3ba2f;
+  background-color: var(--bnb-svg);
 }
 
 /* ------------------------------------------------------  Timeline -------------------------------------------------------------- */
 
 .timeline-box {
-  background: linear-gradient(
-    153.79deg,
-    rgba(255, 255, 255, 0.1) -31.17%,
-    rgba(153, 153, 153, 0) 112.78%
-  );
-  border-top: 3px solid #a020f0;
+  background: var(--timeline-gr);
+  border-top: 3px solid var(--timeline-br);
   padding: 20px;
 }
 
 .disc {
-  border: 2px solid white;
+  border: 2px solid var(--white-color);
   bottom: 14px;
 }
 
 .common-rotate {
   width: 50px;
   height: 50px;
-  border: 1px solid #a020f0;
-  box-shadow: 0px 0px 10px 0px #a020f0b2;
+  border: 1px solid var(--timeline-br);
+  box-shadow: 0px 0px 10px 0px var(--common-ro);
   border-radius: 3.54px;
   background-color: var(--body-bg);
   transform: rotate(45deg);
@@ -454,7 +437,7 @@ h2 {
   left: 50%;
   margin-left: -3px;
   height: 76%;
-  border: 3px dotted white;
+  border: 3px dotted var(--white-color);
 }
 
 .container-timeline {
@@ -475,11 +458,15 @@ h2 {
   left: -16px;
 }
 
+.stars-bg {
+  top: 0;
+}
+
 /* ------------------------------------------------------  Overview -------------------------------------------------------------- */
 
 .overview-common-card {
   background: #ffffff0f;
-  border-left: 2px solid #a020f0;
+  border-left: 2px solid var(--timeline-br);
   border-radius: 10px;
   padding: 10px 20px;
 }
@@ -491,12 +478,8 @@ h2 {
 }
 
 .team-card {
-  background: linear-gradient(
-    135.66deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(153, 153, 153, 0) 112.35%
-  );
-  border: 1px solid #ffffff1a;
+  background: var(--discover-gr);
+  border: 1px solid var(--trading-br);
   border-radius: 10px;
   padding: 12px;
 }
@@ -512,16 +495,12 @@ h2 {
 }
 
 .accordian-box {
-  background: linear-gradient(
-    153.79deg,
-    rgba(255, 255, 255, 0.1) -31.17%,
-    rgba(153, 153, 153, 0) 112.78%
-  );
-  border-radius: 10px;
+  background: var(--accordian-bx);
+    border-radius: 10px;
 }
 
 .accordian-p {
-  border-bottom: 3px solid #a020f0;
+  border-bottom: 3px solid var(--timeline-br);
   border-radius: 10px;
 }
 
@@ -622,7 +601,20 @@ h2 {
   background-color: #1da1f2;
 }
 
-/* ------------------------------------------------------  Media screens --------------------------------------------------------- */
+/* ------------------------------------------------------  Hover Effects  ------------------------------------------------------- */
+
+.Trade-btn:hover,
+.subscribe-btn:hover {
+  background: transparent;
+  border: 1px solid #ca215d;
+}
+
+.common-btn:hover .started-arrow {
+  transition: all 200ms linear !important;
+  transform: translateX(4px);
+}
+
+/* ------------------------------------------------------  Media screens -------------------------------------------------------- */
 
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
 
@@ -737,13 +729,17 @@ h2 {
   .footer-p {
     max-width: 374px;
   }
+
+  .stars-bg {
+    top: -229%;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 1400 ------------------------------------------------------- */
 
 @media (min-width: 1400px) {
   .section1 {
-    bottom: 200px;
+    bottom: 185px;
     background-size: 100% 77%;
   }
 
@@ -778,10 +774,6 @@ h2 {
   .xxl-pt-140 {
     padding-top: 140px;
   }
-
-  .social-icons {
-    justify-content: center;
-  }
 }
 
 /* ------------------------------------------------------  Max-width: 1200 ------------------------------------------------------- */
@@ -790,6 +782,10 @@ h2 {
   .team-card {
     flex-direction: column;
     align-items: center !important;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }
 
@@ -915,7 +911,7 @@ h2 {
 
   .timeline::after {
     left: 22px;
-    border: 2px dotted white;
+    border: 2px dotted var(--white-color);
     height: 77%;
   }
 
