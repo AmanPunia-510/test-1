@@ -35,22 +35,22 @@ h2 {
   padding-bottom: 27px;
 }
 
-.pt-55 {
-  padding-top: 55px;
+.pt-40 {
+  padding-top: 40px;
 }
 
-.py-55 {
-  padding-top: 55px;
-  padding-bottom: 55px;
+.pt-65 {
+  padding-top: 65px;
+}
+
+.py-65 {
+  padding-top: 65px;
+  padding-bottom: 65px;
 }
 
 .py-70 {
   padding-top: 70px;
   padding-bottom: 70px;
-}
-
-.pt-73 {
-  padding-top: 73px;
 }
 
 .pt-140 {
@@ -110,10 +110,6 @@ h2 {
 
 .mt-60 {
   margin-top: 60px;
-}
-
-.mt-70 {
-  margin-top: 70px;
 }
 
 .mb-160 {
@@ -329,6 +325,8 @@ h2 {
   left: 50%;
   transform: translate(-50%);
   top: 0;
+  width: 100%;
+  max-width: 987px;
 }
 
 /* ------------------------------------------------------  Mirror -------------------------------------------------------------- */
@@ -568,6 +566,18 @@ h2 {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+
+  .mt-md-70 {
+    margin-top: 70px;
+  }
+
+  .mt-sm-24 {
+    margin-top: 24px;
+  }
+
+  .pt-md-73 {
+    padding-top: 73px;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 992 ------------------------------------------------------- */
@@ -717,5 +727,11 @@ h2 {
   .slider {
     padding-top: 27px;
     padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .discover-card {
+    padding: 12px;
   }
 }
