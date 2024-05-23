@@ -461,6 +461,26 @@ h2 {
   border-radius: 50%;
 }
 
+.email-button {
+  width: 302px;
+  border-radius: 115px;
+  background: #ffffff14;
+}
+
+.email {
+  border: none;
+  outline: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  background-color: transparent;
+}
+
+.sign-p {
+  max-width: 298px;
+  margin-top: 14px;
+}
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
 
 /* ------------------------------------------------------  Min-width: 1400 ------------------------------------------------------- */
