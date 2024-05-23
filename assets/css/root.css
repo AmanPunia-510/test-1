@@ -287,3 +287,9 @@
     --fs-5xl: 26px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  :root{
+    --fs-10xl: 41px;
+  }
+}
