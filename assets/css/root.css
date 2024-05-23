@@ -266,8 +266,15 @@
   background-color: var(--footer-bg);
 }
 
+@media (max-width: 991.1px) {
+  :root {
+    --fs-14xl: 50px;
+  }
+}
+
 @media (max-width: 767.1px) {
   :root {
+    --fs-14xl: 44px;
     --fs-12xl: 48px;
     --fs-10xl: 34px;
   }
@@ -275,6 +282,7 @@
 
 @media (max-width: 575.1px) {
   :root {
+    --fs-14xl: 35px;
     --fs-12xl: 30px;
     --fs-10xl: 30px;
     --fs-5xl: 26px;
@@ -284,13 +292,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1240px) {
-  :root{
+  :root {
     --fs-5xl: 26px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  :root{
+  :root {
     --fs-10xl: 41px;
   }
 }

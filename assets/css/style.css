@@ -528,15 +528,33 @@ h2 {
 /* ------------------------------------------------------  Ready section --------------------------------------------------------- */
 
 .ready-section {
-  background-image: url(../images/png/ready-section.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 388px;
-  background-size: 100%;
+  padding: 63px 0px;
+  border-radius: 320px;
+  background: linear-gradient(
+    180deg,
+    rgba(123, 31, 103, 0.1) -15.63%,
+    rgba(208, 33, 93, 0.1) 100%
+  );
 }
 
 .ready-h {
   max-width: 719px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.ready-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 320px;
+  padding: 1px;
+  background: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
+  -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
+    linear-gradient(var(--white-color) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 /* ------------------------------------------------------  Footer  --------------------------------------------------------------- */
@@ -772,6 +790,15 @@ h2 {
   .overview-png {
     max-width: 720px;
   }
+
+  .ready-section {
+    border-radius: 60px;
+  }
+
+  .ready-section::after {
+    content: "";
+    border-radius: 60px;
+  }
 }
 
 /* ------------------------------------------------------  Max-width: 768 ------------------------------------------------------- */
@@ -907,5 +934,15 @@ h2 {
   .team-card {
     max-width: 400px;
     width: 100%;
+  }
+
+  .ready-section {
+    border-radius: 10px;
+    padding: 39px 0px;
+  }
+
+  .ready-section::after {
+    content: "";
+    border-radius: 10px;
   }
 }
