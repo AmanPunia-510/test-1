@@ -29,6 +29,10 @@ h2 {
   z-index: 1;
 }
 
+.w-83 {
+  width: 83%;
+}
+
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
 
 .pb-27 {
@@ -84,6 +88,11 @@ h2 {
   margin-top: 12px;
 }
 
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .mb-14 {
   margin-bottom: 14px;
 }
@@ -96,6 +105,10 @@ h2 {
   margin-top: 20px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
@@ -104,20 +117,12 @@ h2 {
   margin-top: 30px;
 }
 
-.mt-34 {
-  margin-top: 34px;
-}
-
 .mb-40 {
   margin-bottom: 40px;
 }
 
 .mt-60 {
   margin-top: 60px;
-}
-
-.mb-160 {
-  margin-bottom: 160px;
 }
 
 /* ------------------------------------------------------  Flex Classes -------------------------------------------------------- */
@@ -431,18 +436,48 @@ h2 {
   transform: translateX(-50%);
 }
 
+.timeline {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 165px;
+  left: 50%;
+  margin-left: -3px;
+  height: 76%;
+  border: 3px dotted white;
+}
+
+.container-timeline {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
 /* ------------------------------------------------------  Overview -------------------------------------------------------------- */
 
 .overview-common-card {
   background: #ffffff0f;
   border-left: 2px solid #a020f0;
   border-radius: 10px;
-  width: 198px;
   padding: 10px 20px;
-}
-
-.overview-card {
-  max-width: 425px;
 }
 
 /* ------------------------------------------------------  Team ----------------------------------------------------------------- */
@@ -459,7 +494,11 @@ h2 {
   );
   border: 1px solid #ffffff1a;
   border-radius: 10px;
-  padding: 30px;
+  padding: 12px;
+}
+
+.team-content > div {
+  text-wrap: nowrap;
 }
 
 /* ------------------------------------------------------  Accordian -------------------------------------------------------------- */
@@ -480,6 +519,10 @@ h2 {
 .accordian-p {
   border-bottom: 3px solid #a020f0;
   border-radius: 10px;
+}
+
+.accordian-h {
+  margin-right: 12px;
 }
 
 /* ------------------------------------------------------  Ready section --------------------------------------------------------- */
@@ -573,6 +616,42 @@ h2 {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+
+  .timeline-after1 {
+    right: -25px;
+    top: -24px;
+    z-index: 1;
+  }
+
+  .timeline-after2 {
+    top: -25px;
+    z-index: 1;
+    left: -26px;
+  }
+
+  .timeline-after3 {
+    right: -25px;
+    top: -24px;
+    z-index: 1;
+  }
+
+  .timeline-after4 {
+    top: -25px;
+    z-index: 1;
+    left: -26px;
+  }
+
+  .overview-card {
+    max-width: 425px;
+  }
+
+  .mt-sm-34 {
+    margin-top: 34px;
+  }
+
+  .overview-common-card {
+    width: 198px;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 768 ------------------------------------------------------- */
@@ -627,6 +706,10 @@ h2 {
     padding-top: 140px;
     padding-bottom: 140px;
   }
+
+  .mb-lg-160 {
+    margin-bottom: 160px;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 1400 ------------------------------------------------------- */
@@ -647,6 +730,10 @@ h2 {
     background-position: center;
     background-size: cover;
   }
+
+  .team-card {
+    padding: 30px;
+  }
 }
 
 /* ------------------------------------------------------  Max-width: 1400 ------------------------------------------------------- */
@@ -663,6 +750,27 @@ h2 {
 
   .xxl-pt-140 {
     padding-top: 140px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* ------------------------------------------------------  Max-width: 1200 ------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+  .team-card {
+    flex-direction: column;
+    align-items: center !important;
+  }
+}
+
+/* ------------------------------------------------------  Max-width: 992 ------------------------------------------------------- */
+
+@media (max-width: 992px) {
+  .overview-png {
+    max-width: 720px;
   }
 }
 
@@ -758,8 +866,46 @@ h2 {
   }
 }
 
+/* ------------------------------------------------------  Max-width: 576 ------------------------------------------------------- */
+
 @media (max-width: 576px) {
   .discover-card {
     padding: 12px;
+  }
+
+  .timeline::after {
+    left: 22px;
+    border: 2px dotted white;
+    height: 77%;
+  }
+
+  .container-timeline {
+    width: 100%;
+  }
+
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .common-rotate {
+    left: 6px;
+    top: -14px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+
+  .overview-common-card {
+    width: 298px;
+  }
+
+  .team-card {
+    max-width: 400px;
+    width: 100%;
   }
 }
