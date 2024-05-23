@@ -21,14 +21,27 @@ h2 {
   max-width: 497px;
 }
 
-.max-w-521 {
-  max-width: 521px;
+.max-w-511 {
+  max-width: 511px;
+}
+
+.z-1 {
+  z-index: 1;
 }
 
 /* ------------------------------------------------------  Padding Classes ----------------------------------------------------- */
 
 .pb-27 {
   padding-bottom: 27px;
+}
+
+.pt-55 {
+  padding-top: 55px;
+}
+
+.py-55 {
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .py-70 {
@@ -121,6 +134,10 @@ h2 {
   gap: 12px;
 }
 
+.gap-14 {
+  gap: 14px;
+}
+
 .gap-18 {
   gap: 18px;
 }
@@ -158,11 +175,6 @@ h2 {
   background-color: var(--body-bg);
 }
 
-.navbar {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 .red-brdr-txt {
   padding: 6px 20px;
   width: fit-content;
@@ -171,12 +183,17 @@ h2 {
   border: 1px solid var(--color-d0);
 }
 
+.main-logo {
+  width: 44px;
+}
+
 .main-h {
-  max-width: 998px;
+  max-width: 957px;
 }
 
 .main-h-logo {
-  width: 47px;
+  width: 26px;
+  margin-bottom: 4px;
 }
 
 .header-p {
@@ -194,6 +211,13 @@ h2 {
   width: 168px;
   height: 48px;
   box-shadow: 0px 8px 40px 0px var(--started-btn);
+}
+
+.Header-position {
+  top: 78%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ------------------------------------------------------  John Doe -------------------------------------------------------------- */
@@ -214,8 +238,8 @@ h2 {
 
 .slider {
   position: relative;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 57px;
+  padding-bottom: 50px;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -450,6 +474,8 @@ h2 {
   max-width: 719px;
 }
 
+/* ------------------------------------------------------  Footer  --------------------------------------------------------------- */
+
 .footer-p {
   max-width: 374px;
 }
@@ -459,6 +485,7 @@ h2 {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  transition: all 200ms linear;
 }
 
 .email-button {
@@ -481,24 +508,106 @@ h2 {
   max-width: 298px;
   margin-top: 14px;
 }
+
+.subscribe-btn {
+  width: 121px;
+  height: 44px;
+}
+
+/* ------------------------------------------------------  Sub footer  ----------------------------------------------------------- */
+
+.sub-footer {
+  border-top: 1px solid #414141;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.common-footer-icon:hover {
+  transform: scale(0.9);
+}
+
+.Discord-footer-icon:hover {
+  background-color: #7289da;
+}
+
+.twiter-footer-icon:hover {
+  background-color: #1da1f2;
+}
+
 /* ------------------------------------------------------  Media screens --------------------------------------------------------- */
+
+/* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
+
+@media (min-width: 576px) {
+  .main-h-logo {
+    width: 47px;
+  }
+
+  .main-logo {
+    width: 67px;
+  }
+
+  .navbar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+/* ------------------------------------------------------  Min-width: 768 ------------------------------------------------------- */
+
+@media (min-width: 768px) {
+  .pt-md-90 {
+    padding-top: 90px;
+  }
+
+  .mb-md-40 {
+    margin-bottom: 40px;
+  }
+
+  .py-md-90 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* ------------------------------------------------------  Min-width: 992 ------------------------------------------------------- */
+
+@media (min-width: 992px) {
+  .mb-lg-140 {
+    margin-bottom: 140px;
+  }
+
+  .pt-lg-140 {
+    padding-top: 140px;
+  }
+
+  .mt-lg-30 {
+    margin-top: 30px;
+  }
+
+  .py-lg-140 {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
 
 /* ------------------------------------------------------  Min-width: 1400 ------------------------------------------------------- */
 
 @media (min-width: 1400px) {
   .section1 {
-    bottom: 155px;
+    bottom: 200px;
     background-size: 100% 77%;
   }
 
   .mt-xxl-100 {
     margin-top: 100px;
   }
-}
 
-@media (min-width: 992px) {
-  .mb-lg-140 {
-    margin-bottom: 140px;
+  .header {
+    background-image: url("../images/png/Header1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -512,5 +621,101 @@ h2 {
 
   .max-xxl-mb-140 {
     margin-top: 140px;
+  }
+
+  .xxl-pt-140 {
+    padding-top: 140px;
+  }
+}
+
+/* ------------------------------------------------------  Max-width: 768 ------------------------------------------------------- */
+
+@media (max-width: 767.1px) {
+  /* navbar code */
+
+  #checkbox {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+  }
+
+  .bars {
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--color-d0);
+  }
+
+  #bar2 {
+    transition-duration: 0.8s;
+  }
+
+  #bar1,
+  #bar3 {
+    width: 70%;
+  }
+
+  #checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: 0.5s;
+  }
+
+  #checkbox:checked + .toggle {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+  }
+
+  .navbar-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 102vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/png/Hero-Bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+    z-index: 3;
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .slider {
+    padding-top: 27px;
+    padding-bottom: 16px;
   }
 }

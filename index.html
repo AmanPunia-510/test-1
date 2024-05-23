@@ -25,13 +25,20 @@
 
     <header class="header w-100 min-vh-100 d-flex flex-column">
         <nav class="nav pt-20 position-relative z-2 js-z">
-            <div class="my-container w-100">
+            <div class="my-container w-100 position-relative z-1">
                 <div
                     class="navbar d-flex justify-content-between align-items-center py-10 px-12 navbar-bg px-sm-6 py-sm-five">
 
                     <div class="logo">
                         <img src="./assets/images/svg/logo.svg" alt="logo-svg" class="main-logo">
                     </div>
+
+                    <input type="checkbox" id="checkbox" hidden>
+                    <label for="checkbox" class="toggle d-flex flex-column d-md-none z-31">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
 
                     <ul class="navbar-items d-flex align-items-center gap-40">
                         <li class="navlist"><a href="#" class="fw-400 fs-md lh-150 ff-syne white-color">Home</a></li>
@@ -47,20 +54,23 @@
                             </a>
                         </li>
                         <li class="navlist"><a href="#" class="fw-400 fs-md lh-150 ff-syne white-color">RoadMap</a></li>
+                        <button
+                            class="common-btn Trade-btn btn-bg ff-syne fw-600 fs-md lh-150 white-color d-flex d-md-none justify-content-center align-items-center btn-gradient">Trade
+                            Now</button>
                     </ul>
 
                     <button
-                        class="common-btn Trade-btn btn-bg ff-syne fw-600 fs-md lh-150 white-color d-flex justify-content-center align-items-center btn-gradient">Trade
+                        class="common-btn Trade-btn btn-bg ff-syne fw-600 fs-md lh-150 white-color d-none d-md-flex justify-content-center align-items-center btn-gradient">Trade
                         Now</button>
                 </div>
             </div>
         </nav>
 
-        <div class="my-container w-100 d-flex justify-content-center max-xxl-grow">
+        <div class="my-container w-100 d-flex justify-content-center max-xxl-grow position-relative z-1">
             <div class="mt-xxl-100">
                 <div class="copy-txt red-brdr-txt ff-syne fw-400 fs-md lh-150 white-color mx-auto mb-10">Copy Trading
                     Meets DeFi</div>
-                <h2 class="main-h ff-syne fw-500 fs-12xl lh-140% white-color text-center">Decentralized Perpetual
+                <h2 class="main-h ff-syne fw-500 fs-12xl lh-140 white-color text-center">Decentralized Perpetual
                     Exchange
                     <span class="color-d0">DEX<img src="./assets/images/svg/Logo.svg" alt="text logo svg"
                             class="main-h-logo">Dus</span>
@@ -70,7 +80,7 @@
                     trading
                     with stable fees, trading across multiple markets, copy trading, singles transactions
                     for a CEX-like experience and competitive rankings.</p>
-                <div class="d-flex align-items-center gap-4 justify-content-center mt-16">
+                <div class="d-flex align-items-center gap-2 gap-md-4 justify-content-center mt-16 flex-wrap">
                     <div class="d-flex align-items-center gap-2">
                         <div>
                             <svg width="37" height="36" viewBox="0 0 37 36" fill="none"
@@ -129,7 +139,7 @@
                 </div>
 
                 <button
-                    class="started-btn mx-auto mt-5 common-btn d-flex align-items-center justify-content-center gap-10 ff-syne fw-600 fs-md lh-150 white-color btn-gradient">
+                    class="started-btn mx-auto common-btn d-flex align-items-center justify-content-center gap-10 ff-syne fw-600 fs-md lh-150 white-color btn-gradient mt-3 mt-sm-5">
                     <span>Get Started</span>
                     <span class="started-arrow d-flex align-items-center justify-content-center">
                         <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,22 +151,25 @@
                 </button>
             </div>
         </div>
+
+        <img src="./assets/images/png/section1.png" alt="section1 image"
+            class="Header-position position-absolute d-block d-xxl-none">
     </header>
 
     <main>
 
         <!------------------------------------------------------- John Doe ---------------------------------------------------->
-        <section class="section1 john-doe position-relative">
+        <section class="section1 john-doe position-relative pt-55 pt-md-90 pt-lg-140 pt-xxl-0">
             <div class="my-container w-100">
                 <img src="./assets/images/png/section1-image.png" alt="section 1 image" class="section1-image w-100">
             </div>
         </section>
 
         <!------------------------------------------------------- Partners ---------------------------------------------------->
-        <section class="section2 overflow-hidden max-xxl-mb-140">
+        <section class="section2 overflow-hidden pt-55 pt-md-90 pt-lg-140 pt-xxl-0">
 
             <div class="my-container w-100">
-                <h2 class="sec2-h ff-syne fw-500 fs-10xl lh-150 white-color text-center mb-40">Our Partners</h2>
+                <h2 class="sec2-h ff-syne fw-500 fs-10xl lh-150 white-color text-center mt-6 mb-md-40">Our Partners</h2>
             </div>
             <div class="slider">
                 <div class="slider2">
@@ -201,23 +214,23 @@
         </section>
 
         <!------------------------------------------------------- Trading ---------------------------------------------------->
-        <section class="section3 trading py-140">
+        <section class="section3 trading py-55 py-md-90 py-lg-140">
             <div class="my-container w-100">
-                <div class="row align-items-center">
-                    <div class="col-6">
-                        <div class="trading-box1">
+                <div class="row align-items-center gap-12 gap-md-0">
+                    <div class="col-12 col-md-6">
+                        <div class="trading-box1 d-flex flex-column align-items-center d-md-inline-block">
                             <div class="copy-txt red-brdr-txt ff-syne fw-400 fs-md lh-150 white-color mb-10">
                                 Focus on Trading</div>
-                            <h2 class="trading-h1 ff-syne fw-500 fs-10xl lh-125 white-color mt-10">Simplified Trading,
+                            <h2 class="trading-h1 ff-syne fw-500 fs-10xl lh-125 white-color mt-10 text-center text-md-start">Simplified Trading,
                                 Enhanced Experience</h2>
-                            <p class="trading-p1 ff-syne lh-140 fw-400 fs-md color-e6 mt-3">Forget web3 complexity, at
+                            <p class="trading-p1 ff-syne lh-140 fw-400 fs-md color-e6 mt-3 text-center text-md-start">Forget web3 complexity, at
                                 Dexodus we make it simple. Just trade. Enjoy an overall more intuitive trading
                                 experience.</p>
-                            <p class="trading-p2 ff-syne lh-140 fw-400 fs-md color-e6 mt-3">Escape Web3 Complexity with
+                            <p class="trading-p2 ff-syne lh-140 fw-400 fs-md color-e6 mt-3 text-center text-md-start">Escape Web3 Complexity with
                                 Dexodus: Trade Effortlessly, Experience Intuitive Simplicity</p>
 
                             <button
-                                class="started-btn mt-5 common-btn d-flex align-items-center justify-content-center gap-10 ff-syne fw-600 fs-md lh-150 white-color btn-gradient">
+                                class="started-btn mt-3 mt-sm-5 common-btn d-flex align-items-center justify-content-center gap-10 ff-syne fw-600 fs-md lh-150 white-color btn-gradient">
                                 <span>Start Now</span>
                                 <span class="started-arrow d-flex align-items-center justify-content-center">
                                     <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
@@ -230,8 +243,8 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-end">
-                        <div class="max-w-521">
+                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <div class="max-w-511">
                             <div class="trading-box2">
                                 <div class="d-flex align-items-center gap-3">
                                     <div>
@@ -239,40 +252,29 @@
                                     </div>
                                     <div class="ff-syne fw-500 fs-3xl white-color lh-150">Gasless</div>
                                 </div>
-                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">Sign once and we
-                                    take
-                                    care of the rest - the simplicity of a CEX with the advantages of a DEX. Made
-                                    possible
-                                    by
-                                    Bionomy's smart accounts.</p>
+                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">No ETH needed! Thanks to account abstraction you can enjoy gasless transactions for hassle-free trading.</p>
                             </div>
 
-                            <div class="trading-box2 mt-30">
+                            <div class="trading-box2 mt-12 mt-lg-30">
                                 <div class="d-flex align-items-center gap-3">
                                     <div>
-                                        <img src="./assets/images/svg/glass.svg" alt="glass svg">
+                                        <img src="./assets/images/svg/click.svg" alt="Click svg">
                                     </div>
-                                    <div class="ff-syne fw-500 fs-3xl white-color lh-150">Gasless</div>
+                                    <div class="ff-syne fw-500 fs-3xl white-color lh-150">Click trading</div>
                                 </div>
-                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">Sign once and we
-                                    take
-                                    care of the rest - the
-                                    simplicity of a CEX with the advantages of a DEX. Made possible by
-                                    Bionomy's smart accounts.</p>
+                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">Sign once and we take care of the rest - the simplicity of a CEX with the advantages of a DEX. Made possible by
+                                Bionomy's smart accounts.</p>
                             </div>
 
-                            <div class="trading-box2 mt-30">
+                            <div class="trading-box2 mt-12 mt-lg-30">
                                 <div class="d-flex align-items-center gap-3">
                                     <div>
-                                        <img src="./assets/images/svg/glass.svg" alt="glass svg">
+                                        <img src="./assets/images/svg/low.svg" alt="Low svg">
                                     </div>
-                                    <div class="ff-syne fw-500 fs-3xl white-color lh-150">Gasless</div>
+                                    <div class="ff-syne fw-500 fs-3xl white-color lh-150">Low latency</div>
                                 </div>
-                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">Sign once and we
-                                    take
-                                    care of the rest - the
-                                    simplicity of a CEX with the advantages of a DEX. Made possible by
-                                    Bionomy's smart accounts.</p>
+                                <p class="trading-box2-p ff-syne fw-400 fs-md lh-150 color-e5 mt-12">High-frequency market data powered by Chain-link Data Streams, a cutting edge decentralized and transparent
+                                infrastructure.</p>
                             </div>
                         </div>
                     </div>
@@ -281,7 +283,7 @@
         </section>
 
         <!------------------------------------------------------- Discover ---------------------------------------------------->
-        <section class="section4 discover position-relative">
+        <!-- <section class="section4 discover position-relative">
             <div class="my-container w-100 pt-73">
                 <div class="copy-txt red-brdr-txt ff-syne fw-400 fs-md lh-150 white-color mb-10 mx-auto">
                     Top-features</div>
@@ -401,11 +403,11 @@
                 </div>
             </div>
             <img src="./assets/images/png/Discover.png" alt="Discover top" class="discover-png position-absolute">
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Mirror Section -------------------------------------------------->
 
-        <section class="section5 mirror pt-140">
+        <!-- <section class="section5 mirror pt-140">
             <div class="my-container w-100">
                 <div class="row align-items-center">
                     <div class="col-6">
@@ -439,11 +441,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Leverage Section ------------------------------------------------>
 
-        <section class="section6 levrage pt-140">
+        <!-- <section class="section6 levrage pt-140">
             <div class="my-container w-100">
                 <h2 class="discover-h fw-500 fs-10xl ff-syne lh-150 white-color text-center">Leverage Trading</h2>
                 <p class="discover-p1 ff-syne fw-400 fs-md lh-150 color-e6 text-center mx-auto mt-3">Amplify your
@@ -716,10 +718,10 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Timeline Section ------------------------------------------------>
-        <section class="section7 timeline-section">
+        <!-- <section class="section7 timeline-section">
             <div class="my-container w-100">
                 <div class="timeline row position-relative">
                     <div class="col-3">
@@ -795,10 +797,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Overview section ------------------------------------------------>
-        <section class="section7 overview py-140">
+        <!-- <section class="section7 overview py-140">
             <div class="my-container w-100">
                 <div class="row align-items-center">
                     <div class="col-6">
@@ -834,11 +836,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Team Section ---------------------------------------------------->
 
-        <section class="section8 team">
+        <!-- <section class="section8 team">
             <div class="my-container w-100">
                 <div class="copy-txt red-brdr-txt ff-syne fw-400 fs-md lh-150 white-color mb-10 mx-auto">
                     Team</div>
@@ -989,10 +991,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Accordian Section ----------------------------------------------->
-
+        <!-- 
         <section class="section9 accordian-section py-140">
             <div class="my-container w-100">
                 <h2 class="fw-500 fs-10xl ff-syne lh-150 white-color text-center mt-10">Frequently Asked Questions</h2>
@@ -1073,11 +1075,11 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
         <!------------------------------------------------------- Ready Section --------------------------------------------------->
 
-        <section class="section10 pb-140">
+        <!-- <section class="section10 pb-140">
             <div class="my-container w-100">
                 <div class="ready-section d-flex flex-column align-items-center justify-content-center">
                     <h2 class="ready-h fw-600 ff-syne lh-150 white-color fs-14xl text-center">Ready to make your mark?
@@ -1096,11 +1098,11 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
 
     </main>
 
-    <footer class="footer footer-bg">
+    <!-- <footer class="footer footer-bg">
         <div class="my-container w-100">
             <div class="d-flex justify-content-between align-items-start py-70">
                 <div class="footer-logo-content">
@@ -1111,14 +1113,18 @@
                         for a CEX-like experience and competitive rankings.</p>
 
                     <div class="footer-icons d-flex align-items-center gap-3 mt-30">
-                        <div
-                            class="common-footer-icon twiter-footer-icon d-flex align-items-center justify-content-center">
-                            <img src="./assets/images/svg/twiter.svg" alt="twiter icon">
-                        </div>
-                        <div
-                            class="common-footer-icon twiter-footer-icon d-flex align-items-center justify-content-center">
-                            <img src="./assets/images/svg/Discord.svg" alt="Discord icon">
-                        </div>
+
+                        <a href="https://x.com/?lang=en&mx=2" target="_blank">
+                            <div
+                                class="common-footer-icon twiter-footer-icon d-flex align-items-center justify-content-center">
+                                <img src="./assets/images/svg/twiter.svg" alt="twiter icon">
+                            </div>
+                            <a href="https://discord.com/" target="_blank">
+                                <div
+                                    class="common-footer-icon Discord-footer-icon d-flex align-items-center justify-content-center">
+                                    <img src="./assets/images/svg/Discord.svg" alt="Discord icon">
+                                </div>
+                            </a>
                     </div>
                 </div>
 
@@ -1139,17 +1145,22 @@
                         <input type="email" name="email-button" class="email ff-syne fw-400 fs-sm lh-150 color-bd"
                             placeholder="Your e-mail">
                         <button
-                            class="common-btn Trade-btn btn-bg ff-syne fw-600 fs-md lh-150 white-color d-flex justify-content-center align-items-center btn-gradient m-1">Subscribe</button>
+                            class="common-btn subscribe-btn btn-bg ff-syne fw-600 fs-md lh-150 white-color d-flex justify-content-center align-items-center btn-gradient m-1">Subscribe</button>
                     </form>
                     <p class="sign-p ff-syne fw-400 fs-md lh-150 color-b8">Sign up with your email address to receive
                         news and updates</p>
                 </div>
             </div>
-            <div class="sub-footer">
-                
+            <div class="sub-footer d-flex align-items-center justify-content-between">
+                <p class="copy-right ff-syne fw-400 fs-sm lh-150 color-b8">Copyright ©2024 Dexodus. All rights reserved.
+                </p>
+                <div class="d-flex align-items-center gap-14">
+                    <div class="ff-syne fw-400 fs-sm lh-150 color-b8">Privacy Policy &nbsp; &nbsp; &nbsp;|</div>
+                    <div class="ff-syne fw-400 fs-sm lh-150 color-b8">Terms and Conditions</div>
+                </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
