@@ -667,6 +667,22 @@ h2 {
   width: 100%;
 }
 
+.trading-box2:hover {
+  box-shadow: 0px 0px 6px var(--white-color);
+}
+
+.discover-card:hover {
+  box-shadow: 0px 0px 6px var(--white-color);
+}
+
+.leverage-card:hover {
+  box-shadow: 0px 0px 6px var(--white-color)
+}
+
+.team-card:hover{
+  box-shadow: 0px 0px 6px var(--white-color)
+}
+
 /* ------------------------------------------------------  All ellips ----------------------------------------------------------- */
 
 .discover-left {
@@ -728,13 +744,13 @@ h2 {
   opacity: 52%;
 }
 
-.dexo{
-     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 99px;
+.dexo {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 99px;
 }
 
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
@@ -898,7 +914,7 @@ h2 {
 
 @media (min-width: 1400px) {
   .section1 {
-    bottom: 185px;
+    bottom: 170px;
     background-size: 100% 77%;
   }
 
