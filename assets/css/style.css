@@ -686,6 +686,24 @@ h2 {
   opacity: 52%;
 }
 
+.leverage-left {
+  left: 0;
+  bottom: 102px;
+  opacity: 52%;
+}
+
+.leverage-right {
+  right: 0;
+  bottom: -26%;
+  opacity: 52%;
+}
+
+.over-left {
+  top: -36%;
+  left: 0;
+  opacity: 52%;
+}
+
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
 
 @media (min-width: 576px) {
@@ -737,6 +755,16 @@ h2 {
   .overview-common-card {
     width: 198px;
   }
+
+  .leverage-right {
+    opacity: 100%;
+  }
+
+  .over-left {
+    top: -36%;
+    left: 0;
+    opacity: 100%;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 768 ------------------------------------------------------- */
@@ -779,6 +807,10 @@ h2 {
   .mirror-right {
     opacity: 100%;
   }
+
+  .leverage-left {
+    opacity: 100%;
+  }
 }
 
 /* ------------------------------------------------------  Min-width: 992 ------------------------------------------------------- */
@@ -817,6 +849,11 @@ h2 {
     left: 0;
     top: -32%;
     opacity: 100%;
+  }
+
+  .leverage-right {
+    right: 0;
+    bottom: 100px;
   }
 }
 
