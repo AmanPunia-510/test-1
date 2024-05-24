@@ -120,6 +120,19 @@
     rgba(255, 255, 255, 0.1) -31.17%,
     rgba(153, 153, 153, 0) 112.78%
   );
+  --color-ca: #ca215d;
+  --twiter-h: #1da1f2;
+  --discord-h: #7289da;
+  --color-41: #414141;
+  --email-btn: #ffffff14;
+  --common-f: #ffffff33;
+  --ready-gr: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
+  --ready-s:  linear-gradient(
+    180deg,
+    rgba(123, 31, 103, 0.1) -15.63%,
+    rgba(208, 33, 93, 0.1) 100%
+  );
+  --over: #ffffff0f;
   --btn-gradient: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
 }
 

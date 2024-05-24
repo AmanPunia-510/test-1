@@ -17,6 +17,8 @@ h2 {
   padding: 0;
 }
 
+/* ------------------------------------------------------  Width Classes ------------------------------------------------- */
+
 .max-w-497 {
   max-width: 497px;
 }
@@ -24,6 +26,12 @@ h2 {
 .max-w-511 {
   max-width: 511px;
 }
+
+.w-83 {
+  width: 83%;
+}
+
+/* ------------------------------------------------------  Z-indexs ----------------------------------------------------- */
 
 .z-0 {
   z-index: 0;
@@ -35,10 +43,6 @@ h2 {
 
 .z-2 {
   z-index: 2;
-}
-
-.w-83 {
-  width: 83%;
 }
 
 ::-webkit-scrollbar {
@@ -473,7 +477,7 @@ h2 {
 /* ------------------------------------------------------  Overview -------------------------------------------------------------- */
 
 .overview-common-card {
-  background: #ffffff0f;
+  background: var(--over);
   border-left: 2px solid var(--timeline-br);
   border-radius: 10px;
   padding: 10px 20px;
@@ -522,11 +526,7 @@ h2 {
 .ready-section {
   padding: 63px 0px;
   border-radius: 320px;
-  background: linear-gradient(
-    180deg,
-    rgba(123, 31, 103, 0.1) -15.63%,
-    rgba(208, 33, 93, 0.1) 100%
-  );
+  background: var(--ready-s);
 }
 
 .ready-h {
@@ -541,7 +541,7 @@ h2 {
   inset: 0;
   border-radius: 320px;
   padding: 1px;
-  background: linear-gradient(180deg, #7b1f67 -15.63%, #d0215d 100%);
+  background: var(--ready-gr);
   -webkit-mask: linear-gradient(var(--white-color) 0 0) content-box,
     linear-gradient(var(--white-color) 0 0);
   -webkit-mask-composite: xor;
@@ -552,7 +552,7 @@ h2 {
 /* ------------------------------------------------------  Footer  --------------------------------------------------------------- */
 
 .common-footer-icon {
-  border: 1px solid #ffffff33;
+  border: 1px solid var(--common-f);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -562,7 +562,7 @@ h2 {
 .email-button {
   width: 302px;
   border-radius: 115px;
-  background: #ffffff14;
+  background: var(--email-btn);
 }
 
 .email {
@@ -593,7 +593,7 @@ h2 {
 /* ------------------------------------------------------  Sub footer  ----------------------------------------------------------- */
 
 .sub-footer {
-  border-top: 1px solid #414141;
+  border-top: 1px solid var(--color-41);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -603,11 +603,11 @@ h2 {
 }
 
 .Discord-footer-icon:hover {
-  background-color: #7289da;
+  background-color: var(--discord-h);
 }
 
 .twiter-footer-icon:hover {
-  background-color: #1da1f2;
+  background-color: var(--twiter-h);
 }
 
 /* ------------------------------------------------------  Hover Effects  ------------------------------------------------------- */
@@ -615,7 +615,7 @@ h2 {
 .Trade-btn:hover,
 .subscribe-btn:hover {
   background: transparent;
-  border: 1px solid #ca215d;
+  border: 1px solid var(--color-ca);
 }
 
 .common-btn:hover .started-arrow {
@@ -728,13 +728,13 @@ h2 {
   opacity: 52%;
 }
 
-.dexo {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding-left: 40px;
-  padding-right: 40px;
-  height: 99px;
+.dexo{
+     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 99px;
 }
 
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
