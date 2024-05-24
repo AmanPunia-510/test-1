@@ -716,6 +716,27 @@ h2 {
   opacity: 52%;
 }
 
+.faq-left {
+  left: 0;
+  top: 0;
+  opacity: 52%;
+}
+
+.faq-right {
+  right: 0;
+  top: 0;
+  opacity: 52%;
+}
+
+.dexo {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 99px;
+}
+
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
 
 @media (min-width: 576px) {
@@ -821,7 +842,10 @@ h2 {
     opacity: 100%;
   }
 
-  .leverage-left,.team-left {
+  .leverage-left,
+  .team-left,
+  .faq-right,
+  .faq-left {
     opacity: 100%;
   }
 }
