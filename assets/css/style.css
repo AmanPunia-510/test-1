@@ -704,6 +704,18 @@ h2 {
   opacity: 52%;
 }
 
+.team-left {
+  left: 0;
+  top: 0;
+  opacity: 52%;
+}
+
+.team-right {
+  top: -28%;
+  right: 0;
+  opacity: 52%;
+}
+
 /* ------------------------------------------------------  Min-width: 576 ------------------------------------------------------- */
 
 @media (min-width: 576px) {
@@ -804,11 +816,12 @@ h2 {
     opacity: 100%;
   }
 
-  .mirror-right {
+  .mirror-right,
+  .team-right {
     opacity: 100%;
   }
 
-  .leverage-left {
+  .leverage-left,.team-left {
     opacity: 100%;
   }
 }
@@ -1019,6 +1032,10 @@ h2 {
     padding-top: 27px;
     padding-bottom: 16px;
   }
+
+  .team-left {
+    top: -248px;
+  }
 }
 
 /* ------------------------------------------------------  Max-width: 576 ------------------------------------------------------- */
@@ -1077,5 +1094,11 @@ h2 {
   .sub-footer {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .team-right {
+    top: -14%;
+    right: 0;
+    opacity: 27%;
   }
 }
